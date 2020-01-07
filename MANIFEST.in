@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include recruitnext *.css
+recursive-include recruitnext *.csv
+recursive-include recruitnext *.html
+recursive-include recruitnext *.ico
+recursive-include recruitnext *.js
+recursive-include recruitnext *.json
+recursive-include recruitnext *.md
+recursive-include recruitnext *.png
+recursive-include recruitnext *.py
+recursive-include recruitnext *.svg
+recursive-include recruitnext *.txt
+recursive-exclude recruitnext *.pyc

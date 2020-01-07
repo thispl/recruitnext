@@ -1,0 +1,829 @@
+{
+ "autoname": "C.####",
+ "creation": "2019-10-09 17:09:58.500486",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "supplier",
+  "task",
+  "sub_agent",
+  "sub_agent_fees",
+  "air_ticket_by",
+  "cess_applicable",
+  "column_break_4",
+  "candidate_image",
+  "collection_status",
+  "candidate_status",
+  "territory",
+  "interview_date",
+  "interview_location",
+  "local_associate",
+  "slbfe_payment_by",
+  "rec_executive",
+  "executive_email_id",
+  "section_break_22",
+  "position_salary",
+  "travel_section",
+  "travelled_date",
+  "column_break_22",
+  "flight",
+  "column_break_24",
+  "project_type",
+  "preferred_job_title_section",
+  "job_title",
+  "candidate_summary_section",
+  "given_name__surname",
+  "full_name",
+  "mobile",
+  "current_location",
+  "nationality",
+  "column_break_23",
+  "sur_name",
+  "local_experience",
+  "international_experience",
+  "total_experience",
+  "nic_number",
+  "passport_details_section",
+  "available",
+  "applied",
+  "not_applied",
+  "column_break_32",
+  "passport_no",
+  "place_of_issue",
+  "column_break_35",
+  "issued_date",
+  "expiry_date",
+  "contact_details_section",
+  "landline",
+  "alternate_mobile",
+  "column_break_39",
+  "alternate_landline",
+  "skype_id",
+  "original_documents_holded_section",
+  "original_documents",
+  "column_break_51",
+  "candidate_payment_applicable",
+  "service_charge_candidate",
+  "section_break_54",
+  "executive",
+  "user",
+  "team",
+  "column_break_58",
+  "executive_name",
+  "column_break_60",
+  "business_unit",
+  "division",
+  "candidate_attachment_section",
+  "irf",
+  "column_break_65",
+  "passport",
+  "personal_details_section",
+  "date_of_birth",
+  "age",
+  "gender",
+  "civil_status",
+  "email",
+  "column_break_78",
+  "height",
+  "weight",
+  "religion",
+  "languages_known",
+  "education_details_section",
+  "education",
+  "professional_qualification_section",
+  "professional_qualification",
+  "driving_details_section",
+  "licenses",
+  "experience_details_section",
+  "experience",
+  "ctc_details_section",
+  "ctc_mentioned_in",
+  "column_break_94",
+  "current_ctc",
+  "column_break_96",
+  "expected_ctc",
+  "column_break_98",
+  "currency_type",
+  "present_address_section",
+  "address_line",
+  "city1",
+  "state1",
+  "permanent_address_same_as_above",
+  "column_break_107",
+  "address_line2",
+  "district_perm",
+  "permanent_address_section",
+  "address_line_1",
+  "city2",
+  "state2",
+  "column_break_114",
+  "address_line1",
+  "district",
+  "section_break_117",
+  "remarks",
+  "fold_5",
+  "section_break_120"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "project.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "sub_agent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sub Agent"
+  },
+  {
+   "fieldname": "sub_agent_fees",
+   "fieldtype": "Data",
+   "label": "Sub Agent Fees"
+  },
+  {
+   "fetch_from": "project.air_ticket_by",
+   "fieldname": "air_ticket_by",
+   "fieldtype": "Data",
+   "label": "Air Ticket by"
+  },
+  {
+   "fetch_from": "project.cess_applicable",
+   "fieldname": "cess_applicable",
+   "fieldtype": "Data",
+   "label": "CESS Applicable"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "candidate_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Candidate Image"
+  },
+  {
+   "fieldname": "collection_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Collection Status",
+   "options": "\nBilled\nPartial\nCollected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "candidate_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Candidate Status",
+   "options": "\nIDB\nSourced\nSubmitted\nShortlisted\nLinedup\nInterviewed\nProposed PSL\nDo Not Disturb"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "interview_location",
+   "fieldtype": "Link",
+   "label": "Interview Location",
+   "options": "District"
+  },
+  {
+   "fetch_from": "project.select_local_associate",
+   "fieldname": "local_associate",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Local Associate",
+   "options": "Associate"
+  },
+  {
+   "fetch_from": "project.slbfe_payment_by",
+   "fieldname": "slbfe_payment_by",
+   "fieldtype": "Data",
+   "label": "SLBFE Payment by"
+  },
+  {
+   "fieldname": "rec_executive",
+   "fieldtype": "Link",
+   "label": "Recruitment Executive",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.prefered_email",
+   "fieldname": "executive_email_id",
+   "fieldtype": "Data",
+   "label": "Executive Email ID"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "travel_section",
+   "fieldtype": "Section Break",
+   "label": "Travel"
+  },
+  {
+   "fieldname": "travelled_date",
+   "fieldtype": "Date",
+   "label": "Travelled Date"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flight",
+   "fieldtype": "Data",
+   "label": "Flight"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Select",
+   "label": "Project Type",
+   "options": "\nA\nB\nDIRECT"
+  },
+  {
+   "fieldname": "candidate_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate Summary"
+  },
+  {
+   "fieldname": "given_name__surname",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile ",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "Current Location",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "\nSri Lanka\nIndia\nNepal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "international_experience",
+   "fieldtype": "Int",
+   "label": "International Experience"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Int",
+   "label": "Total Experience",
+   "read_only": 1
+  },
+  {
+   "fieldname": "passport_details_section",
+   "fieldtype": "Section Break",
+   "label": "Passport Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "applied",
+   "fieldtype": "Check",
+   "label": "Applied"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.available==1",
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Passport No"
+  },
+  {
+   "depends_on": "eval:doc.available==1",
+   "fieldname": "place_of_issue",
+   "fieldtype": "Link",
+   "label": "Place of Issue",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.available==1",
+   "fieldname": "issued_date",
+   "fieldtype": "Date",
+   "label": "Issued Date"
+  },
+  {
+   "depends_on": "eval:doc.available==1",
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline "
+  },
+  {
+   "fieldname": "alternate_mobile",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile"
+  },
+  {
+   "fieldname": "skype_id",
+   "fieldtype": "Data",
+   "label": "Skype ID"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alternate_landline",
+   "fieldtype": "Data",
+   "label": "Alternate Landline"
+  },
+  {
+   "fieldname": "original_documents_holded_section",
+   "fieldtype": "Section Break",
+   "label": "Original Documents Holded"
+  },
+  {
+   "fieldname": "original_documents",
+   "fieldtype": "Table",
+   "label": "Original Documents Holded",
+   "options": "Original Documents List"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "candidate_payment_applicable",
+   "fieldtype": "Check",
+   "label": "Candidate Payment Applicable"
+  },
+  {
+   "depends_on": "eval:doc.candidate_payment_applicable === 1",
+   "fieldname": "service_charge_candidate",
+   "fieldtype": "Currency",
+   "label": "Service Charge (Candidate)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_54",
+   "fieldtype": "Section Break",
+   "label": "Executive"
+  },
+  {
+   "fieldname": "executive",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Executive",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Executive",
+   "options": "User"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Data",
+   "label": "Team"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "executive_name",
+   "fieldtype": "Read Only",
+   "label": "Executive Name"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_unit",
+   "fieldtype": "Read Only",
+   "label": "Business Unit"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "candidate_attachment_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate Attachment"
+  },
+  {
+   "fieldname": "irf",
+   "fieldtype": "Attach",
+   "label": "CV",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Attach",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale\nPrefer Not to Say",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sur_name",
+   "fieldtype": "Data",
+   "label": "Sur Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion",
+   "reqd": 1
+  },
+  {
+   "fieldname": "languages_known",
+   "fieldtype": "Table",
+   "label": "Languages Known",
+   "options": "Languages Known",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "education_details_section",
+   "fieldtype": "Section Break",
+   "label": "Education Details"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Education Details",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "driving_details_section",
+   "fieldtype": "Section Break",
+   "label": "Driving Details"
+  },
+  {
+   "fieldname": "ctc_details_section",
+   "fieldtype": "Section Break",
+   "label": "CTC Details"
+  },
+  {
+   "fieldname": "ctc_mentioned_in",
+   "fieldtype": "Select",
+   "label": "CTC Mentioned in",
+   "options": "\nMonthly\nYearly"
+  },
+  {
+   "fieldname": "column_break_94",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_ctc",
+   "fieldtype": "Currency",
+   "label": "Current CTC"
+  },
+  {
+   "fieldname": "column_break_96",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_ctc",
+   "fieldtype": "Currency",
+   "label": "Expected CTC"
+  },
+  {
+   "fieldname": "column_break_98",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency_type",
+   "fieldtype": "Link",
+   "label": "Currency Type",
+   "options": "Currency"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "experience_details_section",
+   "fieldtype": "Section Break",
+   "label": "Experience Details"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Table",
+   "label": "Experience",
+   "options": "Experience Details"
+  },
+  {
+   "fieldname": "present_address_section",
+   "fieldtype": "Section Break",
+   "label": "Present Address"
+  },
+  {
+   "fieldname": "address_line",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "city1",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state1",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "default": "0",
+   "fieldname": "permanent_address_same_as_above",
+   "fieldtype": "Check",
+   "label": "Permanent Address Same as Above"
+  },
+  {
+   "fieldname": "column_break_107",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "district_perm",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "permanent_address_section",
+   "fieldtype": "Section Break",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "city2",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state2",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "column_break_114",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Link",
+   "label": "Address Line 2",
+   "options": "District"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "section_break_117",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "fold_5",
+   "fieldtype": "Fold"
+  },
+  {
+   "fieldname": "section_break_120",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "position_salary",
+   "fieldtype": "Table",
+   "label": "Position Salary",
+   "options": "Position Salary"
+  },
+  {
+   "fieldname": "local_experience",
+   "fieldtype": "Int",
+   "label": "Local Experience"
+  },
+  {
+   "depends_on": "eval:doc.nationality==\"Sri Lanka\"",
+   "fieldname": "nic_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "N.I.C Number"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "preferred_job_title_section",
+   "fieldtype": "Section Break",
+   "label": "Preferred Job Title"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Job Title",
+   "options": "Preferred Job Title"
+  },
+  {
+   "default": "0",
+   "fieldname": "not_applied",
+   "fieldtype": "Check",
+   "label": "Not Applied"
+  },
+  {
+   "default": "0",
+   "fieldname": "available",
+   "fieldtype": "Check",
+   "label": "Available"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "civil_status",
+   "fieldtype": "Select",
+   "label": "Civil Status",
+   "options": "\nSingle\nMarried\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "licenses",
+   "fieldtype": "Table",
+   "label": "Driving Licenses",
+   "options": "Driving Licenses"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "professional_qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Professional Qualification"
+  },
+  {
+   "fieldname": "professional_qualification",
+   "fieldtype": "Table",
+   "label": "Professional Qualification",
+   "options": "Professional Qualification"
+  }
+ ],
+ "modified": "2020-01-06 14:08:32.459304",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Candidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "given_name__surname",
+ "track_changes": 1
+}

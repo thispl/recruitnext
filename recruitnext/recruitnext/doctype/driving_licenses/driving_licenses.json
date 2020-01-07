@@ -1,0 +1,64 @@
+{
+ "creation": "2020-01-04 12:39:36.173585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "licence_no",
+  "licence_type",
+  "column_break_4",
+  "country",
+  "valid_until",
+  "holding_original"
+ ],
+ "fields": [
+  {
+   "fieldname": "licence_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Licence No."
+  },
+  {
+   "fieldname": "licence_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Licence Type",
+   "options": "\nHeavy vehicle\nLight vehicle"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "valid_until",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Valid Until"
+  },
+  {
+   "default": "0",
+   "fieldname": "holding_original",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Holding Original"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-04 14:09:59.862960",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Driving Licenses",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

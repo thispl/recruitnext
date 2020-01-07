@@ -1,0 +1,159 @@
+{
+ "autoname": "hash",
+ "creation": "2019-11-11 11:32:34.690889",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "currency_type",
+  "col_break1",
+  "item_name",
+  "conversion_rate",
+  "description_section",
+  "description",
+  "sec_break2",
+  "qty",
+  "uom",
+  "rate",
+  "col_break4",
+  "amount",
+  "base_rate",
+  "base_amount"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "columns": 3,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "oldfieldname": "item_code",
+   "oldfieldtype": "Link",
+   "options": "Item",
+   "print_hide": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "currency_type",
+   "fieldtype": "Link",
+   "label": "Currency Type",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Item Name",
+   "oldfieldname": "item_name",
+   "oldfieldtype": "Data"
+  },
+  {
+   "default": "1",
+   "fieldname": "conversion_rate",
+   "fieldtype": "Float",
+   "label": "Conversion Rate"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Text",
+   "print_width": "300px",
+   "width": "300px"
+  },
+  {
+   "fieldname": "sec_break2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "columns": 2,
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "oldfieldname": "qty",
+   "oldfieldtype": "Currency"
+  },
+  {
+   "default": "Nos",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "print_hide": 1
+  },
+  {
+   "bold": 1,
+   "columns": 3,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate ",
+   "oldfieldname": "import_rate",
+   "oldfieldtype": "Currency",
+   "options": "currency"
+  },
+  {
+   "fieldname": "col_break4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "oldfieldname": "import_amount",
+   "oldfieldtype": "Currency",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_rate",
+   "fieldtype": "Currency",
+   "label": "Rate (Company Currency)",
+   "oldfieldname": "rate",
+   "oldfieldtype": "Currency",
+   "options": "Company:company:default_currency",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_amount",
+   "fieldtype": "Currency",
+   "label": "Amount (Company Currency)",
+   "oldfieldname": "amount",
+   "oldfieldtype": "Currency",
+   "options": "Company:company:default_currency",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-06 18:45:57.394974",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Project Expense Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
