@@ -1,37 +1,48 @@
 {
- "creation": "2020-01-08 10:29:01.968550",
+ "creation": "2019-10-11 15:47:15.352109",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "job_title",
+  "country_code",
   "column_break_2",
-  "remarks"
+  "city_code",
+  "column_break_4",
+  "telephone_no"
  ],
  "fields": [
   {
-   "fieldname": "job_title",
-   "fieldtype": "Link",
+   "fieldname": "country_code",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Job Title",
-   "options": "Position"
+   "label": "Country Code"
   },
   {
    "fieldname": "column_break_2",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "remarks",
+   "fieldname": "city_code",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Remarks"
+   "label": "City Code"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telephone_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Telephone no"
   }
  ],
  "istable": 1,
- "modified": "2020-01-08 10:29:01.968550",
+ "modified": "2020-01-08 12:01:05.519241",
  "modified_by": "Administrator",
  "module": "Recruitnext",
- "name": "Preferred Job Title",
+ "name": "Fax",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

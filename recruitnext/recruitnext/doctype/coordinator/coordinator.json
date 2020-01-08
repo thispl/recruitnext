@@ -1,37 +1,33 @@
 {
- "creation": "2020-01-08 10:29:01.968550",
+ "creation": "2019-10-09 13:24:28.724187",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "job_title",
-  "column_break_2",
-  "remarks"
+  "business_unit",
+  "coordinator"
  ],
  "fields": [
   {
-   "fieldname": "job_title",
+   "fieldname": "business_unit",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Job Title",
-   "options": "Position"
+   "label": "Business Unit",
+   "options": "Business Unit"
   },
   {
-   "fieldname": "column_break_2",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Data",
+   "fieldname": "coordinator",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Remarks"
+   "label": "Co-ordinator",
+   "options": "User"
   }
  ],
  "istable": 1,
- "modified": "2020-01-08 10:29:01.968550",
+ "modified": "2020-01-08 12:02:08.764547",
  "modified_by": "Administrator",
  "module": "Recruitnext",
- "name": "Preferred Job Title",
+ "name": "Coordinator",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

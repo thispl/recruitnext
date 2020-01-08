@@ -1,0 +1,193 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2019-10-09 13:24:33.916352",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_2",
+  "associate_name",
+  "associate_type",
+  "column_break_5",
+  "company_name",
+  "status",
+  "column_break_8",
+  "office_type",
+  "section_break_11",
+  "contact_details_section",
+  "mobile",
+  "alternate_mobile",
+  "column_break_16",
+  "email",
+  "alternate_email",
+  "column_break_19",
+  "landline",
+  "alternate_landline",
+  "location_section",
+  "address_line_1",
+  "state",
+  "column_break_25",
+  "address_line_2",
+  "city",
+  "remarks_section",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "AS-.####"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "associate_name",
+   "fieldtype": "Data",
+   "label": "Associate Name"
+  },
+  {
+   "fieldname": "associate_type",
+   "fieldtype": "Select",
+   "label": "Associate Type",
+   "options": "Foreign Associate\nLocal Associate\nSub-Agent"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nInactive\nBlocked\nSuspended"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "office_type",
+   "fieldtype": "Select",
+   "label": "Office Type",
+   "options": "\nTrade Test & Training Center\nTours & Travels\nPlacements / Consultancy\nNo Office"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile "
+  },
+  {
+   "fieldname": "alternate_mobile",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "alternate_email",
+   "fieldtype": "Data",
+   "label": "Alternate Email"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline "
+  },
+  {
+   "fieldname": "alternate_landline",
+   "fieldtype": "Data",
+   "label": "Alternate Landline"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2020-01-08 12:00:52.936491",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Associate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "associate_type",
+ "track_changes": 1
+}

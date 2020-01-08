@@ -1,0 +1,83 @@
+{
+ "creation": "2019-10-10 09:51:38.647570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organization",
+  "role",
+  "work_summary",
+  "column_break_4",
+  "currently_working",
+  "from_date",
+  "to_date",
+  "reason_for_leaving",
+  "notice_period_in_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organization"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Role"
+  },
+  {
+   "fieldname": "work_summary",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Work Summary"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "currently_working",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Currently Working"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason for Leaving"
+  },
+  {
+   "fieldname": "notice_period_in_days",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Notice Period (In Days)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-08 12:01:14.808970",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Experience Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

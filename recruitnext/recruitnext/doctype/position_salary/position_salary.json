@@ -1,0 +1,152 @@
+{
+ "creation": "2019-10-11 14:22:37.929273",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position",
+  "no_required",
+  "currency",
+  "salary",
+  "contract_duration",
+  "working_hours_per_day",
+  "working_days_per_week",
+  "ot_applicable",
+  "column_break_8",
+  "food_allowance",
+  "amount",
+  "housing_allowance",
+  "amount1",
+  "transport_allowance",
+  "amount2",
+  "medical_allowance",
+  "leave_allocated",
+  "vacation_period",
+  "return_ticket"
+ ],
+ "fields": [
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Position"
+  },
+  {
+   "fieldname": "no_required",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No Required"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Salary"
+  },
+  {
+   "default": "0",
+   "fieldname": "contract_duration",
+   "fieldtype": "Data",
+   "label": "Contract Duration"
+  },
+  {
+   "default": "0",
+   "fieldname": "working_hours_per_day",
+   "fieldtype": "Data",
+   "label": "Working Hours per Day"
+  },
+  {
+   "default": "0",
+   "fieldname": "working_days_per_week",
+   "fieldtype": "Data",
+   "label": "Working Days per Week"
+  },
+  {
+   "fieldname": "ot_applicable",
+   "fieldtype": "Select",
+   "label": "OT Applicable",
+   "options": "\nYES\nNO"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "food_allowance",
+   "fieldtype": "Select",
+   "label": "Food",
+   "options": "\nYES\nNO"
+  },
+  {
+   "depends_on": "eval:doc.food_allowance === \"NO\"",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Food Allowance"
+  },
+  {
+   "fieldname": "housing_allowance",
+   "fieldtype": "Select",
+   "label": "Housing",
+   "options": "\nYES\nNO"
+  },
+  {
+   "depends_on": "eval:doc.housing_allowance === \"NO\"",
+   "fieldname": "amount1",
+   "fieldtype": "Currency",
+   "label": "Housing Allowance"
+  },
+  {
+   "fieldname": "transport_allowance",
+   "fieldtype": "Select",
+   "label": "Transport",
+   "options": "\nYES\nNO"
+  },
+  {
+   "depends_on": "eval:doc.transport_allowance === \"NO\"",
+   "fieldname": "amount2",
+   "fieldtype": "Currency",
+   "label": "Transport Allowance"
+  },
+  {
+   "fieldname": "medical_allowance",
+   "fieldtype": "Select",
+   "label": "Medical Provided",
+   "options": "\nYES\nNO"
+  },
+  {
+   "fieldname": "leave_allocated",
+   "fieldtype": "Data",
+   "label": "Leave Allocated"
+  },
+  {
+   "fieldname": "vacation_period",
+   "fieldtype": "Data",
+   "label": "Vacation Period"
+  },
+  {
+   "fieldname": "return_ticket",
+   "fieldtype": "Select",
+   "label": "Return Ticket",
+   "options": "\nYES\nNO"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-08 12:00:46.691182",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Position Salary",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

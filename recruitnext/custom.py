@@ -166,12 +166,12 @@ from datetime import datetime, timedelta
 
 @frappe.whitelist()
 def Lead_age():
-    query = """"select * from `Lead` """"
+    query = """select * from `Lead` """
     lead = frappe.db.sql(query,as_dict = 1)
     for l in lead:
         date = today()
         ldate = l.create_on
-        print date
-        print ldate
+        print (date)
+        print (ldate)
         age = date_diff(date - ldate)
         frappe.db.set_value("Lead",l.name,"lead_age", age)

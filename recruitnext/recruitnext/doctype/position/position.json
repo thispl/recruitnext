@@ -1,0 +1,90 @@
+{
+ "autoname": "field:position",
+ "creation": "2019-10-09 16:34:36.060782",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position",
+  "pf_employer",
+  "pf_candidate",
+  "foreign_associate_payment",
+  "local_associate_payment",
+  "column_break_5",
+  "air_ticket",
+  "slbfe_fee",
+  "costing_for_jo"
+ ],
+ "fields": [
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position",
+   "unique": 1
+  },
+  {
+   "fieldname": "pf_employer",
+   "fieldtype": "Currency",
+   "label": "PF from Employer"
+  },
+  {
+   "fieldname": "pf_candidate",
+   "fieldtype": "Currency",
+   "label": "PF from Candidate"
+  },
+  {
+   "fieldname": "foreign_associate_payment",
+   "fieldtype": "Currency",
+   "label": "Foreign Associate Payment"
+  },
+  {
+   "fieldname": "local_associate_payment",
+   "fieldtype": "Currency",
+   "label": "Local Associate Payment"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "air_ticket",
+   "fieldtype": "Select",
+   "label": "Air ticket ",
+   "options": "\nEmployer\nCandidate"
+  },
+  {
+   "fieldname": "slbfe_fee",
+   "fieldtype": "Select",
+   "label": "SLBFE Fee",
+   "options": "\nSelco HR\nCandidate"
+  },
+  {
+   "fieldname": "costing_for_jo",
+   "fieldtype": "Data",
+   "label": "Costing for JO"
+  }
+ ],
+ "modified": "2020-01-08 11:57:57.327993",
+ "modified_by": "Administrator",
+ "module": "Recruitnext",
+ "name": "Position",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

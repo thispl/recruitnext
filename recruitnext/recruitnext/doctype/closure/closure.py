@@ -161,8 +161,8 @@ class Closure(Document):
                                             self.status = 'Visa Stamping'
                                             self.stamped_visa_date = today()
                                     else:
-                                    self.status = 'PCC'
-                                    self.pcc_date = today()
+                                        self.status = 'PCC'
+                                        self.pcc_date = today()
                                 else:
                                     self.status = 'Final Medical'
                                     self.final_medical_date = today()
